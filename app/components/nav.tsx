@@ -4,11 +4,8 @@ const navItems : {[key: string] : {name: string}}= {
   '/': {
     name: 'home',
   },
-  '/flicks': {
-    name: 'flicks',
-  },
-  '/eye-poppers': {
-    name: 'eye poppers',
+  '/effects': {
+    name: 'effects',
   },
 }
 
