@@ -1,4 +1,4 @@
-import GameOfLifeComponent from '@/app/components/GameOfLife';
+import GameOfLifeComponent from '@/app/components/effects/GameOfLife';
 
 export default function EffectsPage() {
   return (
@@ -14,9 +14,6 @@ export default function EffectsPage() {
         <GameOfLifeComponent />
       </div>
 
-      <p className="text-sm text-gray-500 mt-12">
-        More effects coming soon...
-      </p>
     </section>
   );
 }
