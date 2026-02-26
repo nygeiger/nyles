@@ -164,13 +164,13 @@ export default function GameOfLifeComponent() {
                 </button>
                 <button
                     onClick={handleRandomize}
-                    className="px-4 py-2 bg-green-500 text-white rounded hover:bg-green-600 transition-colors font-medium"
+                    className="px-4 py-2 bg-blue-700 text-white rounded hover:bg-blue-800 transition-colors font-medium"
                 >
                     Randomize
                 </button>
                 <button
                     onClick={handleClear}
-                    className="px-4 py-2 bg-red-500 text-white rounded hover:bg-red-600 transition-colors font-medium"
+                    className="px-4 py-2 bg-red-700 text-white rounded hover:bg-red-800 transition-colors font-medium"
                 >
                     Clear
                 </button>
