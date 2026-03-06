@@ -127,7 +127,6 @@ function Board({ squares, onPlay, xIsNext, currentTurn, botEnabled }: {
     let statusColor = "text-slate-500";
     if (winnerCalc) {
         statusText = `${winnerCalc.winningPlayer} wins!`;
-        // statusColor = winnerCalc.winningPlayer === "X" ? "text-slate-700" : "text-rose-500";
         statusColor = "text-white";
     } else if (isDraw) {
         statusText = "It's a draw";
@@ -136,8 +135,6 @@ function Board({ squares, onPlay, xIsNext, currentTurn, botEnabled }: {
         statusColor = "text-rose-400";
     } else {
         statusText = `${xIsNext ? "X" : "O"}'s turn`;
-        // statusColor = xIsNext ? "text-slate-700" : "text-rose-500";
-        // statusColor = "text-gray-100";
         statusColor = xIsNext ? "text-gray-100" : "text-indigo-500";
     }
 
@@ -242,8 +239,8 @@ export default function TicTacToe() {
     const orderedMoves = histAscending ? moves : [...moves].reverse();
 
     return (
-        <div className="bg-black flex flex-col items-center justify-start px-4 py-8 sm:py-12">
-            <div className="w-full max-w-sm sm:max-w-md md:max-w-lg">
+        <div className="bg-black flex flex-col items-center justify-start px-2 md:py-0">
+            <div className="w-full max-w-sm sm:max-w-md md:max-w-lg self-start">
 
                 {/* Header */}
                 <div className="mb-6 sm:mb-8">
@@ -280,7 +277,7 @@ export default function TicTacToe() {
                                 : "bg-white border-slate-200 text-slate-600 hover:bg-rose-100"
                             }`}
                     >
-                        {botEnabled ? "Bot: ON" : "Bot: OFF"}
+                        {botEnabled ? "Bot: ON (minimax)" : "Bot: OFF"}
                     </button>
                     <button
                         onClick={() => setShowHistory(currentVal => !currentVal)}

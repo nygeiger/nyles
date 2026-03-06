@@ -1,9 +1,10 @@
 'use client';
 
 import { useEffect, useRef, useState, useCallback } from 'react';
-import { GameOfLife } from '@/app/lib/classes/gameOfLife';
+import { GameOfLife } from '@/app/classes/gameOfLife';
 
 const DEFAULT_GRID_DIMENSIONS = { x: 45, y: 45 }
+
 export default function GameOfLifeComponent() {
     const CELL_SIZE = 6;
     const GRID_WIDTH = DEFAULT_GRID_DIMENSIONS.x;
@@ -123,7 +124,6 @@ export default function GameOfLifeComponent() {
     };
 
     return (
-        // <div className="flex flex-col gap-6">
         <div className="grid grid-row-5 gap-6">
             <div>
                 <h2 className="text-xl font-semibold mb-2">Conway's Game of Life</h2>

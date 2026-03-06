@@ -1,7 +1,7 @@
-# Nyles's Portfolio
+# Nyles' Portfolio
 
-A website I can use to share varaious projects I've worked on.
+A website featuring various projects I've worked on.
+
+Give it a peek [here](https://nyles.vercel.app/)
 
 Built with Next.js
-
-Give it a try [here](https://nyles.vercel.app/)

@@ -2,7 +2,7 @@
 
 import GameOfLifeComponent from '@/app/components/effects/GameOfLife';
 import TicTacToe2 from '@/app/components/effects/TicTacToe';
-import { ChangeEvent, JSX, useRef, useState } from 'react';
+import { JSX, useState } from 'react';
 
 const EffectDict = {
   GAME_OF_LIFE: "Game of life",
@@ -14,8 +14,6 @@ const effectComponentMap: Record<string, JSX.Element> = {
   [EffectDict.TIC_TAC_TOE]: <TicTacToe2 />,
 };
 
-
-
 export default function EffectsPage() {
   const [currentEffect, setCurrentEffect] = useState<string>(EffectDict.GAME_OF_LIFE);
 
@@ -23,13 +21,9 @@ export default function EffectsPage() {
 
   return (
     <section className="flex-auto items-center h-fit w-full">
-      <h1 className="mb-4 text-3xl font-bold tracking-tighter">
-        Effects & Visualizations
-      </h1>
-
-      <p className="text-gray-600 pb-4">
+      <h1 className="mb-4 text-2xl font-bold tracking-tighter">
         A collection of interactive effects and visualizations to explore.
-      </p>
+      </h1>
 
       Current Effect: <select id="effectSelect" className="animate-pulse" style={{WebkitAppearance: "menulist-button"}} onChange={(e) => setCurrentEffect(e.currentTarget.value)}>
         {Object.values(EffectDict).map((el, i) => {
