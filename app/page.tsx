@@ -8,17 +8,10 @@ export default async function Page() {
         Nyles Geiger
       </h1>
       <p className="mb-4">
-        I’m a software engineer with a background in web development and software implementation. Here you’ll find projects I’ve worked on, along with others still taking shape. Most of what’s here is software-focused, but I also share a few other projects as well.
+        I’m a software engineer with a background in web development and software implementation. Here you’ll find projects I’ve worked on, along with others still taking shape. Most of what’s here is software-focused, but I may also share a few other projects as well.
       </p>
       <div className="my-40">
-        {/* <div>
-        <DailyArt/>
-        </div> */}
         <GitProjects />
-        {/* <button onClick={async () => {
-          "use server";
-          await getDailyArt();
-        }}>Get Daily Art</button> */}
       </div>
     </section>
   )

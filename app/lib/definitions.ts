@@ -10,11 +10,19 @@ type Project = {
 export type GitProject = Project & {
   buttons:
   {
-    title: "Codebase" | "Demo",
-    href: string,
-    ariaLabel: string,
-    src: string,
-  }[]
+    demo: {
+      title: "Demo",
+      href: string,
+      ariaLabel: string,
+      src: string
+    },
+    git: {
+      title: "Codebase",
+      href: string,
+      ariaLabel: string,
+      src: string,
+    }
+  }
 }
 
 export type ArtApiResponse = {
